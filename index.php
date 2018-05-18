@@ -1,3 +1,7 @@
+<?php
+    require_once "configurator.php";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,7 +44,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.php" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="#" class="nav-link">Contatos</a>
@@ -101,7 +105,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="index.html" class="brand-link">
+        <a href="index.php" class="brand-link">
             <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                  style="opacity: .8">
             <span class="brand-text font-weight-light">Admin Controle</span>
@@ -145,21 +149,21 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="pages/forms/general.html" class="nav-link">
+                                        <a href="pages/forms/general.php" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>General Elements</p>
+                                            <p>Cadastrar</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="pages/forms/advanced.html" class="nav-link">
+                                        <a href="pages/forms/CadastroDrone.html" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Advanced Elements</p>
+                                            <p>Atualizar</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="pages/forms/editors.html" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Editors</p>
+                                            <p>Excluir</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -173,21 +177,21 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="pages/forms/general.html" class="nav-link">
+                                        <a href="pages/forms/general.php" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>General Elements</p>
+                                            <p>Cadastrar</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="pages/forms/advanced.html" class="nav-link">
+                                        <a href="pages/forms/CadastroDrone.html" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Advanced Elements</p>
+                                            <p>Atualizar</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="pages/forms/editors.html" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Editors</p>
+                                            <p>Excluir</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -201,21 +205,21 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="pages/forms/general.html" class="nav-link">
+                                        <a href="pages/forms/general.php" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>General Elements</p>
+                                            <p>Cadastrar</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="pages/forms/advanced.html" class="nav-link">
+                                        <a href="pages/forms/CadastroDrone.html" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Advanced Elements</p>
+                                            <p>Atualizar</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="pages/forms/editors.html" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Editors</p>
+                                            <p>Excluir</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -229,21 +233,21 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="pages/forms/general.html" class="nav-link">
+                                        <a href="general.php" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>General Elements</p>
+                                            <p>Cadastrar</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="pages/forms/advanced.html" class="nav-link">
+                                        <a href="pages/forms/CadastroDrone.html" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Advanced Elements</p>
+                                            <p>Atualizar</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="pages/forms/editors.html" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Editors</p>
+                                            <p>Excluir</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -257,23 +261,11 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="pages/forms/general.html" class="nav-link">
+                                        <a href="pages/forms/general.php" class="nav-link">
                                             <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>General Elements</p>
+                                            <p>Visualizar</p>
                                         </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/forms/advanced.html" class="nav-link">
-                                            <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Advanced Elements</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pages/forms/editors.html" class="nav-link">
-                                            <i class="fa fa-circle-o nav-icon"></i>
-                                            <p>Editors</p>
-                                        </a>
-                                    </li>
+
                                 </ul>
                         </ul>
 
@@ -324,14 +316,18 @@
                         <!-- small box -->
                         <div class="small-box bg-info">
                             <div class="inner">
-                                <h3>150</h3>
+                                <h3>
+                                    <?php
+                                     $sql = 'SELECT COUNT idPedido FROM Pedidos';
+                                    ?>
+                                </h3>
 
                                 <p> Quantidade Pedidos recentes</p>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-bag"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                            <a href="#" class="small-box-footer">Mais informações<i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -346,7 +342,7 @@
                             <div class="icon">
                                 <i class="ion ion-stats-bars"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                            <a href="#" class="small-box-footer">Mais informações <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -354,14 +350,15 @@
                         <!-- small box -->
                         <div class="small-box bg-warning">
                             <div class="inner">
-                                <h3>44</h3>
+
+                                <h3></h3>
 
                                 <p>Registro de usuarios</p>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-person-add"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                            <a href="#" class="small-box-footer">Mais informações <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -369,14 +366,18 @@
                         <!-- small box -->
                         <div class="small-box bg-danger">
                             <div class="inner">
-                                <h3>65</h3>
+                                <h3>
+                                    <?php
+                                    $sql = 'SELECT COUNT cnpj FROM Mercado';
+                                    ?>
+                                </h3>
 
                                 <p>Mercado Cadastrados</p>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-pie-graph"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                            <a href="#" class="small-box-footer">Mais informações<i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->

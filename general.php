@@ -1,17 +1,22 @@
+<?php
+require_once "configurator.php";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Icons</title>
+  <title>Admin | Cadastro Drone</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -25,7 +30,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
+        <a href="../../index.php" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -56,7 +61,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -72,7 +77,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -88,7 +93,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -143,22 +148,22 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link">
-      <img src="../../dist/img/AdminLTELogo.png"
-           alt="AdminLTE Logo"
-           class="brand-image img-circle elevation-3"
+    <a href="index.php" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Admin Controle</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user (optional) -->
+      <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="dist/img/user.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
+          <!--select name in admin
+           pegar o usuario da seção-->
           <a href="#" class="d-block">Alexander Pierce</a>
         </div>
       </div>
@@ -168,321 +173,178 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
                 Dashboard
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../../index.php" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Dashboard v1</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
-              <i class="nav-icon fa fa-th"></i>
-              <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-pie-chart"></i>
-              <p>
-                Charts
-                <i class="right fa fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../charts/chartjs.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/flot.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/inline.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fa fa-tree"></i>
-              <p>
-                UI Elements
-                <i class="fa fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../UI/general.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>General</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/icons.html" class="nav-link active">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Icons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/buttons.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Buttons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/sliders.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Sliders</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-edit"></i>
               <p>
-                Forms
+                Drones
                 <i class="fa fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../forms/general.php" class="nav-link">
+                <a href="pages/forms/general.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>General Elements</p>
+                  <p>Cadastrar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../forms/CadastroDrone.html" class="nav-link">
+                <a href="pages/forms/CadastroDrone.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Advanced Elements</p>
+                  <p>Atualizar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../forms/editors.html" class="nav-link">
+                <a href="pages/forms/editors.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Editors</p>
+                  <p>Excluir</p>
                 </a>
               </li>
             </ul>
-          </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-table"></i>
+              <i class="nav-icon fa fa-edit"></i>
               <p>
-                Tables
+                Mercado
                 <i class="fa fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../tables/simple.html" class="nav-link">
+                <a href="pages/forms/general.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Simple Tables</p>
+                  <p>Cadastrar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../tables/data.html" class="nav-link">
+                <a href="pages/forms/CadastroDrone.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Data Tables</p>
+                  <p>Atualizar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/editors.html" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Excluir</p>
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="nav-header">EXAMPLES</li>
-          <li class="nav-item">
-            <a href="../calendar.html" class="nav-link">
-              <i class="nav-icon fa fa-calendar"></i>
-              <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-envelope-o"></i>
+              <i class="nav-icon fa fa-edit"></i>
               <p>
-                Mailbox
+                Produtos
                 <i class="fa fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../mailbox/mailbox.html" class="nav-link">
+                <a href="pages/forms/general.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Inbox</p>
+                  <p>Cadastrar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../mailbox/compose.html" class="nav-link">
+                <a href="pages/forms/CadastroDrone.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Compose</p>
+                  <p>Atualizar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../mailbox/read-mail.html" class="nav-link">
+                <a href="pages/forms/editors.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Read</p>
+                  <p>Excluir</p>
                 </a>
               </li>
             </ul>
-          </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-book"></i>
+              <i class="nav-icon fa fa-edit"></i>
               <p>
-                Pages
+                Categorias
                 <i class="fa fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../examples/invoice.html" class="nav-link">
+                <a href="pages/forms/general.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Invoice</p>
+                  <p>Cadastrar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../examples/profile.html" class="nav-link">
+                <a href="pages/forms/CadastroDrone.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Profile</p>
+                  <p>Atualizar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../examples/login.html" class="nav-link">
+                <a href="pages/forms/editors.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Login</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/register.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Register</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/lockscreen.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Lockscreen</p>
+                  <p>Excluir</p>
                 </a>
               </li>
             </ul>
-          </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-plus-square-o"></i>
+              <i class="nav-icon fa fa-edit"></i>
               <p>
-                Extras
+                Produtos por mercado
                 <i class="fa fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../examples/404.html" class="nav-link">
+                <a href="pages/forms/general.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Error 404</p>
+                  <p>Visualizar</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/500.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Error 500</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/blank.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Blank Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../starter.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Starter Page</p>
-                </a>
-              </li>
+
             </ul>
-          </li>
-          <li class="nav-header">MISCELLANEOUS</li>
-          <li class="nav-item">
-            <a href="https://adminlte.io/docs" class="nav-link">
-              <i class="nav-icon fa fa-file"></i>
-              <p>Documentation</p>
-            </a>
-          </li>
-          <li class="nav-header">LABELS</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-circle-o text-danger"></i>
-              <p class="text">Important</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-circle-o text-warning"></i>
-              <p>Warning</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-circle-o text-info"></i>
-              <p>Informational</p>
-            </a>
-          </li>
+        </ul>
+
+        <li class="nav-header">APP's</li>
+        <li class="nav-item">
+          <a href="pages/calendar.html" class="nav-link">
+            <i class="nav-icon fa fa-calendar"></i>
+            <p>
+              Calendar
+              <span class="badge badge-info right">2</span>
+            </p>
+          </a>
+        </li>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
   </aside>
+    <!-- /.sidebar -->
+
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="alignment: center">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Icons</h1>
+            <h1>Cadastro</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Icons</li>
+              <li class="breadcrumb-item"><a href="../../index.php">Home</a></li>
+              <li class="breadcrumb-item active">Cadastro Drone</li>
             </ol>
           </div>
         </div>
@@ -492,20 +354,78 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <div class="card card-primary card-outline">
-          <div class="card-header">
-            <h3 class="card-title">Icons</h3>
-          </div> <!-- /.card-body -->
-          <div class="card-body">
-            <p>You can use any font library you like with AdminLTE 3.</p>
-            <strong>Recommendations</strong>
-            <div>
-              <a href="https://fontawesome.com/">Font Awesome</a><br>
-              <a href="https://useiconic.com/open/">Iconic Icons</a><br>
-              <a href="http://ionicons.com/">Ion Icons</a><br>
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-6">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Drone</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form role="form">
+                <div class="card-body">
+                  <div class="form-group">
+                      <label>Status Drone</label>
+                      <select class="form-control select2"  style="width: 100%;" name="status">
+                          <option selected="selected">Disponivel</option>
+                          <option>Indisponivel</option>
+                          <option>Manutenção</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Capacidade</label>
+                    <input type="number" class="form-control" id="CapacidadeDrone" placeholder="Capacidade de carga do Drone" name="carga">
+                  </div>
+
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary" name="btnsalvar">Salvar
+                    <?php
+                    # CRIAR drone
+                    if(isset($_POST)){
+                        $status  = $_POST['status'];
+                        $capacidade_carga = $_POST['carga'];
+                        $sql  = 'INSERT INTO Drone ( status,capacidadeCarga) ';
+                        $sql .= 'VALUES (:status, :capacidade_carga)';
+                        try {
+                            $create = $db->prepare($sql);
+                            $create->bindValue(':status', $nome, PDO::PARAM_STR);
+                            $create->bindValue(':capacidade_carga', $email, PDO::PARAM_STR);
+                            if($create->execute()){
+                                echo "<div class='alert alert-success'>
+						<button type='button' class='close' data-dismiss='alert'>&times;</button>
+						<strong>Cadastrado com sucesso!</strong>
+						</div>";
+                            }
+                        } catch (PDOException $e) {
+                            echo "<div class='alert alert-error'>
+						<button type='button' class='close' data-dismiss='alert'>&times;</button>
+						<strong>Erro ao inserir dados!</strong>" . $e->getMessage() . "
+						</div>";
+                        }
+                    }
+                    ?>
+                  </button>
+                </div>
+              </form>
             </div>
-          </div><!-- /.card-body -->
+
+            <!-- /.card -->
+
+
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!--/.col (right) -->
         </div>
+        <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
